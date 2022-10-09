@@ -247,7 +247,7 @@ public class FuzzyWatchFace extends CanvasWatchFaceService {
             float widthTime = mTextPaint.measureText(time);
             canvas.drawText(time, centerX - widthTime / 2f, centerX+mYOffsetTime, mTextPaint);
 
-            SimpleDateFormat format = new SimpleDateFormat("dd. MMMM yyyy", new Locale("da","DK"));
+            SimpleDateFormat format = new SimpleDateFormat("EEE dd. MMMM yyyy", new Locale("da","DK"));
             Date today = mCalendar.getTime();
             String date = format.format(today);
             Resources resources = FuzzyWatchFace.this.getResources();
